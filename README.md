@@ -9,7 +9,7 @@ Added functions 'to_tsquery' and 'ts_rank' to be used in the DQL.
 
 ### Step 1: Download the library using composer
 
-composer require ddmaster/postgre-search-bundle"
+```composer require ddmaster/postgre-search-bundle```
 
 ### Step 2: Configure Symfony
 
