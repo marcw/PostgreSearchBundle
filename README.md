@@ -1,50 +1,17 @@
 PostgreSearchBundle
 ===================================
 
-Symfony2 bundle with tools <a target="_blank" href="http://www.postgresql.org/docs/9.1/static/textsearch.html">full-text search PostgreSQL</a> in Doctrine 2.
+<a target="_blank" href="http://www.postgresql.org/docs/9.1/static/textsearch.html">Full-text search PostgreSQL</a> in Doctrine 2.
 
 Added type 'tsvector' to be used in the mapping.
 
 Added functions 'to_tsquery' and 'ts_rank' to be used in the DQL.
 
-### Step 1: Download PostgreSearchBundle using composer
+### Step 1: Download the library using composer
 
-Add PostgreSearchBundle in your composer.json:
+composer require ddmaster/postgre-search-bundle"
 
-```js
-{
-    "require": {
-        "ddmaster/postgre-search-bundle": "dev-master"
-    }
-}
-```
-
-Now tell composer to download the bundle by running the command:
-
-``` bash
-$ php composer.phar update ddmaster/postgre-search-bundle
-```
-
-Composer will install the bundle to your project's `vendor/ddmaster/postgre-search-bundle` directory.
-
-### Step 2: Enable the bundle
-
-Enable the bundle in the kernel:
-
-``` php
-<?php
-// app/AppKernel.php
-
-public function registerBundles()
-{
-    $bundles = array(
-        // ...
-        new Ddmaster\PostgreSearchBundle\PostgreSearchBundle(),
-    );
-}
-```
-
-### Step 3: Configure
+### Step 2: Configure Symfony
 
 Add in your config.yml:
 
@@ -66,6 +33,7 @@ doctrine:
 ```
 
 ### Step 4: Mapping example
+
 ```php
 /**
  * @var string
