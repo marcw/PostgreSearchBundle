@@ -28,8 +28,9 @@ doctrine:
             default:
                 dql:
                     string_functions:
-                        TSQUERY: Ddmaster\PostgreSearchBundle\DQL\TsqueryFunction
-                        TSRANK: Ddmaster\PostgreSearchBundle\DQL\TsrankFunction
+                        tsquery: Ddmaster\PostgreSearchBundle\DQL\TsqueryFunction
+                        tsrank: Ddmaster\PostgreSearchBundle\DQL\TsrankFunction
+                        plainto_tsquery: Ddmaster\PostgreSearchBundle\DQL\PlainToTsqueryFunction
 ```
 
 ### Step 4: Mapping example
