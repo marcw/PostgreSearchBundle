@@ -15,8 +15,6 @@
         "doctrine/orm": "~2.2"
     },
     "autoload": {
-        "psr-0": { "Ddmaster\\PostgreSearchBundle": "" },
         "psr-4": { "Ddmaster\\PostgreSearchBundle\\": "" }
-    },
-    "target-dir": "Ddmaster/PostgreSearchBundle"
+    }
 }
